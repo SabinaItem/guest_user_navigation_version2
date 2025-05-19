@@ -1,0 +1,38 @@
+@use "colors" as colors;
+
+#guest-user-navigation {
+
+    & h1,
+    & h2,
+    & h3 {
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    & h1,
+    & h2 {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    & h1 {
+        font-size: 36px;
+        color: colors.$light;
+    }
+
+    & h2 {
+        font-size: 28px;
+    }
+
+    & h3 {
+        font-size: 18px;
+    }
+
+    // & p {
+    //     font-family: 'Inter', sans-serif;
+    //     line-height: 1.5;
+    //     margin-bottom: 55px;
+    //     color: colors.$light;
+    //     font-size: 24px;
+    //     width: 70%;
+    // }
+}

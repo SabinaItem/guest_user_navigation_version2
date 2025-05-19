@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:wght@400;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Guest User Navigation</title>
+</head>
+
+<body>
+    <header>
+        <nav id="guest-user-navigation">
+            <!-- Company Logo -->
+            <div class="nav-left">
+                <p class="logo-par">Tech Hub</p>
+                <a href="https://iteminc.info/">
+                    <img src="assets/LogoV2.png" alt="Company Logo" class="logo" />
+                </a>
+            </div>
+
+            <!-- Hamburger Toggle (visible on mobile) -->
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </button>
+
+            <!-- Navigation Links and Search bar -->
+
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="https://iteminc.info/blog">Blog</a></li>
+                    <li class="nav-link"><a href="https://iteminc.info/videos">Videos</a></li>
+                    <li class="nav-link"><a href="https://iteminc.info/manuals">Manuals</a></li>
+                    <li class="nav-link"><a
+                            href="https://iteminc.com/?utm_source=techhub&utm_medium=blog&utm_content=store/">Store</a>
+                    </li>
+                    <li class="nav-link"><a href="#">FAQ</a></li>
+                    <li class="nav-link"><a href="#">About</a></li>
+                </ul>
+
+                <!-- Search Bar -->
+                <div class="nav-search">
+                    <input class="form-control" name="guestSearch" type="text" placeholder="Search resources"
+                        aria-label="Search" />
+                    <button class="cta-button" type="submit">Search</button>
+                </div>
+            </div>
+
+
+            <!-- Login / Sign Up -->
+            <div class="nav-right">
+                <button class="cta-button">Log In / Sign Up</button>
+            </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

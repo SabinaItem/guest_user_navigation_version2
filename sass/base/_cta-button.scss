@@ -1,0 +1,38 @@
+.cta-button {
+    background-color: #f7b103;
+    overflow: hidden;
+    padding: 15px 30px;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s;
+
+    // &:focus {
+    //     outline: 2px solid #000;
+    // }
+
+
+    border: none;
+
+    &:hover {
+        background-color: #f8bd29;
+    }
+
+    & .fa-solid {
+        margin-left: 8px;
+    }
+}
+
+
+@media(max-width: 500px) {
+    .cta-button {
+        padding: 15px 35px;
+    }
+}

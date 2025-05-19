@@ -1,0 +1,28 @@
+{
+    "name": "guest_user_navigation",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile": "sass --load-path=sass --no-source-map style.scss style.css",
+        "watch": "sass --load-path=sass --watch --no-source-map style.scss style.css",
+        "sass:compile": "sass --load-path=sass --no-source-map style.scss style.css",
+        "sass:watch": "sass --load-path=sass --watch --no-source-map style.scss style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": ""
+    },
+    "homepage": "",
+    "dependencies": {
+        "express": "^4.21.2"
+    },
+    "devDependencies": {
+        "sass": "^1.86.0"
+    }
+}
