@@ -1,5 +1,7 @@
-.cta-button {
-    background-color: #f7b103;
+@use "base/colors" as colors;
+
+.nav-cta-button {
+    background-color: colors.$primary-btn;
     overflow: hidden;
     padding: 15px 30px;
     color: #000;
@@ -31,8 +33,8 @@
 }
 
 
-@media(max-width: 500px) {
-    .cta-button {
-        padding: 15px 35px;
-    }
-}
+// @media(max-width: 500px) {
+//     .cta-button {
+//         padding: 15px 35px;
+//     }
+// }

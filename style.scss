@@ -1,6 +1,8 @@
 @use "base/colors";
-@use "base/cta-button";
+@use "base/nav-cta-button";
 @use "base/global";
 
 @use "guest-user-navigation/navbar";
 @use "guest-user-navigation/hamburger";
+@use "guest-user-navigation/hover-effects/border-box";
+@use "guest-user-navigation/dropdown";

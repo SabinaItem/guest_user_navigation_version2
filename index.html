@@ -26,48 +26,72 @@
 
 <body>
     <header>
-        <nav id="guest-user-navigation">
+        <nav id="guest-user-navigation" role="navigation" aria-label="Main menu">
             <!-- Company Logo -->
             <div class="nav-left">
-                <p class="logo-par">Tech Hub</p>
-                <a href="https://iteminc.info/">
-                    <img src="assets/LogoV2.png" alt="Company Logo" class="logo" />
-                </a>
+                <div class="logo-container">
+                    <p class="logo-par">Tech Hub</p>
+                    <a href="https://iteminc.info/">
+                        <img src="assets/LogoV2.png" alt="Company Logo" class="logo" />
+                    </a>
+                </div>
+
+                <!-- Hamburger Toggle (visible on mobile) -->
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"
+                    aria-controls="nav-links">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                </button>
             </div>
 
-            <!-- Hamburger Toggle (visible on mobile) -->
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <div class="hamburger"></div>
-                <div class="hamburger"></div>
-                <div class="hamburger"></div>
-            </button>
+
 
             <!-- Navigation Links and Search bar -->
-
             <div class="nav-center">
-                <ul class="nav-links">
+                <ul class="nav-links" id="nav-links">
                     <li class="nav-link"><a href="https://iteminc.info/blog">Blog</a></li>
                     <li class="nav-link"><a href="https://iteminc.info/videos">Videos</a></li>
                     <li class="nav-link"><a href="https://iteminc.info/manuals">Manuals</a></li>
                     <li class="nav-link"><a
                             href="https://iteminc.com/?utm_source=techhub&utm_medium=blog&utm_content=store/">Store</a>
                     </li>
-                    <li class="nav-link"><a href="#">FAQ</a></li>
-                    <li class="nav-link"><a href="#">About</a></li>
+                    <li class="nav-link has-dropdown">
+                        <a href="#" class="dropdown-toggle" id="faq-toggle" aria-haspopup="true" aria-expanded="false"
+                            aria-controls="faq-dropdown">FAQ <i class="fa fa-caret-down caret-icon"
+                                aria-hidden="true"></i></a>
+                        <ul class="dropdown" id="faq-dropdown" aria-labelledby="faq-toggle" hidden>
+                            <li><a href="/orders">How to make an order?</a></li>
+                            <li><a href="/store">Where do I find...?</a></li>
+                            <li><a href="/about-us">Operation Hours</a></li>
+                            <li><a href="/shipping">Shipping</a></li>
+                            <li><a href="/returns">Returns</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link has-dropdown">
+                        <a href="#" class="dropdown-toggle" id="about-toggle" aria-haspopup="true" aria-expanded="false"
+                            aria-controls="about-dropdown">About <i class="fa fa-caret-down caret-icon"
+                                aria-hidden="true"></i></a>
+                        <ul class="dropdown" id="about-dropdown" aria-labelledby="about-toggle" hidden>
+                            <li><a href="/our-story">Our Story</a></li>
+                            <li><a href="/leadership">Leadership Team</a></li>
+                            <li><a href="/careers">Careers</a></li>
+                        </ul>
+                    </li>
                 </ul>
 
                 <!-- Search Bar -->
-                <div class="nav-search">
+                <form class="nav-search" action="" method="GET">
                     <input class="form-control" name="guestSearch" type="text" placeholder="Search resources"
                         aria-label="Search" />
-                    <button class="cta-button" type="submit">Search</button>
-                </div>
+                    <button class="nav-cta-button" type="submit">Search</button>
+                </form>
             </div>
 
 
             <!-- Login / Sign Up -->
             <div class="nav-right">
-                <button class="cta-button">Log In / Sign Up</button>
+                <button class="nav-cta-button">Log In / Sign Up</button>
             </div>
             </div>
 
