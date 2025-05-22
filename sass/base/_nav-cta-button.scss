@@ -15,15 +15,13 @@
     align-items: center;
     text-align: center;
     transition: background-color 0.3s;
+    border: none;
 
-    // &:focus {
+    // & :focus {
     //     outline: 2px solid #000;
     // }
 
-
-    border: none;
-
-    &:hover {
+    & :hover {
         background-color: #f8bd29;
     }
 
@@ -32,9 +30,8 @@
     }
 }
 
-
 // @media(max-width: 500px) {
-//     .cta-button {
+//     & .nav-cta-button {
 //         padding: 15px 35px;
 //     }
 // }

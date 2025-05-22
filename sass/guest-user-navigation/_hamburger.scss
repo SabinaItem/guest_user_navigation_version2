@@ -7,7 +7,7 @@
     cursor: pointer;
     padding: 0;
 
-    .hamburger {
+    & .hamburger {
         width: 29px;
         height: 3px;
         background: colors.$ii-blue;
@@ -19,23 +19,23 @@
             opacity 0.55s ease;
     }
 
-    .hamburger:nth-child(3) {
+    & .hamburger:nth-child(3) {
         margin: 0;
     }
 
     &.active {
-        .hamburger:nth-child(1) {
+        & .hamburger:nth-child(1) {
             transform: rotate(45deg);
             opacity: 1;
             margin: 0;
         }
 
-        .hamburger:nth-child(2) {
+        & .hamburger:nth-child(2) {
             transform: scale(0.2, 0.2);
             opacity: 0;
         }
 
-        .hamburger:nth-child(3) {
+        & .hamburger:nth-child(3) {
             transform: rotate(-45deg) translate(-4px);
             opacity: 1;
             margin: 0;
@@ -45,7 +45,6 @@
 
 @media(max-width: 768px) {
     #guest-user-navigation {
-
         & .nav-toggle {
             display: block;
         }
